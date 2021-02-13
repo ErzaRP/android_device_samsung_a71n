@@ -34,7 +34,7 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libfod_extension.r5q",
+    name: "libfod_extension.a71n",
     srcs: ["FodExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"

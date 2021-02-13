@@ -1,6 +1,3 @@
-<<<<<<< HEAD:hidl/fod/lineage.biometrics.fingerprint.inscreen@1.0-service.a71n.rc
-service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.a71n
-=======
 on boot
     chown system system /sys/class/lcd/panel/fod_dimming
     chown system system /sys/class/lcd/panel/fp_green_circle
@@ -9,8 +6,7 @@ on boot
     chmod 0644 /sys/class/lcd/panel/fp_green_circle
     chmod 0644 /sys/class/lcd/panel/mask_brightness
 
-service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.r5q
->>>>>>> 62c0216... r5q: Rework fod:hidl/fod/lineage.biometrics.fingerprint.inscreen@1.0-service.r5q.rc
+service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.a71n
     interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
     class hal
     user system
