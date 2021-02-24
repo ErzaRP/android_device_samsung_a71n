@@ -22,6 +22,10 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 TARGET_KERNEL_CONFIG := sm7150_sec_defconfig
 #TARGET_KERNEL_VARIANT_CONFIG := vendor/variant_x1q_chn_openx_defconfig
 #KERNEL_LD := DEBUG_DEFCONFIG=vendor/aosp_defconfig
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 
 # Bluetooth

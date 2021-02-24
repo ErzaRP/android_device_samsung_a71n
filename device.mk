@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.a71n
 
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/rr/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Resolution
 TARGET_SCREEN_HEIGHT := 2400
@@ -31,8 +31,3 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
-
-# Lineage
-ifneq ($(LINEAGE_BUILD),)
--include $(DEVICE_PATH)/device_lineage.mk
-endif
